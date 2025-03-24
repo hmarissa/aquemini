@@ -1,0 +1,36 @@
+.nav{
+    position:static;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: "casey", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 8rem;
+}
+h2{
+    font-family: "tuppence", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: -2rem;
+}
+h3{
+    font-family: "casey", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 4rem;
+}
+p{
+    font-family: "space-grotesk-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.lyrics{
+    display: flex;
+    gap: 8rem;
+}
+.lyrics section{
+    width: 25rem;
+}

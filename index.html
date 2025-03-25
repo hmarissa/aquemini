@@ -4,18 +4,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AQUEMINI</title>
         <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         <style>
+            html{
+                height: 100%;
+            }
             body{
                 background-image: url(./img/home/home-img.gif);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         </style>
     </head>
     <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">1.  Hold On, Be Strong</a>
+            <a href="#">2.  Return of the G</a>
+            <a href="#">3.  Rosa Parks</a>
+            <a href="#">4.  Skew it on the Bar-B</a>
+            <a href="#">5.  Aquemini</a>
+            <a href="#">6.  Synthesizer</a>
+            <a href="#">7.  Slump</a>
+            <a href="#">8.  West Savannah</a>
+            <a href="#">9.  Da Art of Storytellin' (Part 1)</a>
+            <a href="#">10.  Da Art of Storytellin' (Part 2)</a>
+            <a href="#">11.  Mamacita</a>
+            <a href="#">12.  SpottieOttieDopaliscious</a>
+            <a href="#">13.  Y'all Scared</a>
+            <a href="#">14.  Nathaniel</a>
+            <a href="#">15.  Liberation</a>
+            <a href="#">16.  Chonkyfire</a>
+          </div>
         <div>
-            <a>TRACKLIST</a>
+            <span onclick="openNav()">TRACKLIST</span>
             <a>NOW PLAYING:</a>
             <a>Credits</a>
-        
         </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/burst.svg"> </div>
+                    </div>
+                </div>
+                <div class="player-controls scrubber">
+                    <small class="start-time"></small> 
+                    <small class="end-time"></small>
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/Hold On, Be Strong.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <script src="script.js"></script>
     </body>
 </html>

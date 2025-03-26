@@ -7,7 +7,8 @@ h1{
     font-family: "casey", sans-serif;
     font-weight: 700;
     font-style: normal; 
-    font-size: 8rem;
+    font-size: 10rem;
+    margin-top: 10px;
 }
 h2{
     font-family: "tuppence", serif;
@@ -24,15 +25,15 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.2;
 }
 .lyrics{
     display: flex;
-    gap: 8rem;
+    gap: 4rem;
 }
 .lyrics section{
-    width: 25rem;
+    width: 23rem;
 }
 
 
@@ -90,8 +91,8 @@ li{
     list-style-type: none;
 }
 .play-pause img {
-    padding: 0px 10px 0px 10px;
-    height: 30px; /* Adjust size as needed */
+    padding: 5px 10px 0px 10px;
+    height: 25px; /* Adjust size as needed */
     cursor: pointer;
 }
 

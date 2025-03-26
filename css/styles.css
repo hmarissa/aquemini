@@ -28,17 +28,15 @@ p{
 .lyrics{
     gap: 4rem;
     display: flex;
-    flex-direction: row; /* Ensures horizontal layout */
-    overflow-x: auto; /* Allows horizontal scrolling */
-    overflow-y: hidden; /* Prevents vertical scrolling */
-    /* Prevents text wrapping */
-    /* scroll-snap-type: x mandatory; */
+    flex-direction: row; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
     width: 100vw;
     height: 100vh;
 }
-.lyrics section{
+.lyrics section {
     /* width: 23rem; */
-    max-width: 40ch;
+    min-width: 40ch;
 }
 
 

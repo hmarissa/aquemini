@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
+            
             html, body {
                 width: 100vw;
                 overflow-x: hidden;
-                box-sizing: border-box;
             }
             .scrolling-bg {
                 position: absolute;
@@ -22,34 +22,32 @@
                     url(./img/daos2/daos.jpg);
                 background-position: left top;
                 background-repeat: no-repeat;
-                background-size:contain; /* Adjust if needed */
-                z-index: -1; /* Moves it behind content */
+                background-size:contain; 
+                z-index: -1; 
             }
             h1{
-                color: #393a08;
+                color: #40488C;
                 margin: 1rem 3rem 3rem 3rem;
             }
-            #one, #two{
-                padding-top: 14rem;
+            .lyrics section, #three{
+                position: relative;
+                left: 15rem;
             }
-           section img{
+            #one, #two{
+                top: 14rem;
+            }
+           
+          #three img{
             width: 1300px;
             align-self: center;
            }
-        .lyrics{
-            padding-left: 15rem;
-            
-        }
-        #four{
-            padding-left: 10rem;
-        }
-        
+                   
         </style>
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">1.  Hold On, Be Strong</a>
+            <a href="index.html">1.  Hold On, Be Strong</a>
             <a href="#">2.  Return of the G</a>
             <a href="#">3.  Rosa Parks</a>
             <a href="#">4.  Skew it on the Bar-B</a>
@@ -68,7 +66,7 @@
           </div>
         <div class="topnav">
             <span onclick="openNav()">TRACKLIST</span>
-            <a>NOW PLAYING: DA ART OF STORYTELLIN' (PART2)</a>
+            <a>NOW PLAYING: DA ART OF STORYTELLIN' (PART 1)</a>
             <a>CREDITS</a>
         </div>
         <li>
@@ -90,7 +88,7 @@
         </li>
         <div class="scrolling-bg"><h1>Da Art of Storytellin'</h1></div>
         <div class="lyrics">
-            <section>
+            <section id="one">
                 <h2>[Verse 1: Big Boi]</h2>
                 <p>Somebody hit me the other day for a rendezvous</p>
                 <p>Was it the b*tch that f*cked the Goodie and the Dungeon Crew?</p>
@@ -104,7 +102,7 @@
                 <p>Like Jada, her wig was sharp and sporty — that was shawty</p>
                 <p>Safe as a snake on eggs in a Bimmer 840</p>
             </section>
-            <section>
+            <section id="two">
                 <p>It's foggy, I went to the crib to call her but she lost me</p>
                 <p>My baby mama beeped me, seven o'clock, it's gonna cost me</p>
                 <p>But I still wanna cut her, though — maybe she had to work?</p>
@@ -117,10 +115,10 @@
                 <p>I gave her a Lil' Wil CD and a f*ckin' poster</p>
                 <p>It's like that, now</p>
             </section>
-            <section>
+            <div id="three">
                 <img src="img/daos2/da_art_of_storytelling_.gif">
-            </section>
-            <section>
+            </div>
+            <section id="four">
                 <h2>[Chorus: Sleepy Brown & Big Boi]</h2>
                 <p>It's like that, now</p>
                 <p>You better go on and get the hump up out your back now</p>
@@ -138,7 +136,7 @@
                 <p>We chillin' like a villain, and a n*gga feelin' right</p>
                 <p>In the middle of the ghetto on the curb, but in spite all of the bullsh*t</p>
             </section>
-            <section>
+            <section id="five">
                 <p>We on our back, starin' at the stars above (Aww, man)</p>
                 <p>Talkin' bout what we gonna be when we grow up (Mm)</p>
                 <p>I said, "What you wanna be?" She said, "Alive"</p>

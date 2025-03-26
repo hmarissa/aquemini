@@ -24,7 +24,7 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.2;
 }
 .lyrics{
@@ -76,7 +76,15 @@ p{
     font-size: 36px;
     margin-left: 50px;
   }
-
+.topnav span{
+    cursor: pointer;
+}
+.topnav{
+    font-family: "space-grotesk-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+    font-size: 20px;
+    color: #ffffff;
+}
   
 li{
     list-style-type: none;
@@ -98,3 +106,10 @@ div#seekObj1 img {
     height: 30px;
    
 }
+.audio-player{
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+

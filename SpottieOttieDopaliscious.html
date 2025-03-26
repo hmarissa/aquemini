@@ -7,15 +7,23 @@
         <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
-            html{
-                width: 406vh;
-                height: 100vh;
+            html, body {
+                width: 100vw;
+                overflow-x: hidden;
             }
-            body{
-                background-image:url(./img/spottieottedopaliscious-img/FINAL_SpottieOttieDopaliscious_1.gif), url(./img/spottieottedopaliscious-img/spottiebg.jpg);
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200vw; /* Makes it wider so it scrolls */
+                height: 100vh;
+                background-image: 
+                    url(./img/spottieottedopaliscious-img/FINAL_SpottieOttieDopaliscious_1.gif), 
+                    url(./img/spottieottedopaliscious-img/spottiebg.jpg);
                 background-position: left top, right top;
                 background-repeat: no-repeat, no-repeat;
-                background-size: contain;
+                background-size: contain; /* Adjust if needed */
+                z-index: -1; /* Moves it behind content */
             }
             #white{
                 color: rgb(255, 255, 255);
@@ -26,15 +34,9 @@
             h1{
                 color: #A2A8DD;
             }
-            .nonbgimg img{
-               position:absolute;
-               width: 50%;
+            #angel img{
+              width: 100px;
                bottom: 0;
-            }
-            .lyrics section{
-                position: relative;
-                left: 70rem;
-                top:-10rem;
             }
             
         </style>
@@ -42,7 +44,7 @@
     <body>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">1.  Hold On, Be Strong</a>
+            <a href="index.html">1.  Hold On, Be Strong</a>
             <a href="#">2.  Return of the G</a>
             <a href="#">3.  Rosa Parks</a>
             <a href="#">4.  Skew it on the Bar-B</a>
@@ -81,8 +83,10 @@
                 </div>
             </div>
         </li>
-        <h1>SpottieOttieDopaliscious</h1>
+
+        <div class="scrolling-bg"></div>
         <div class="lyrics">
+            <h1>SpottieOttieDopaliscious</h1>
             <section id="white">
                 <h2>[Verse 1: Sleepy Brown]</h2>
                 <p>Dickie shorts, Lincoln's clean<br>
@@ -97,15 +101,13 @@
             </section>
             <section>
                 <h2>[Verse 2: André 3000]</h2>
-                <p>
-                    As the plot thickens, it gives me the dickens, reminiscent of Charles<br>
-                    A lil' discotheque nestled in the ghettos of Niggaville, USA<br>
-                    Via Atlanta, Georgia<br>
-                    A lil' spot where young men and young women go to experience they first little taste of the night life<br>
-                    Me? Well, I've never been there<br>
-                    Well, perhaps, once, but I was so engulfed in the Ol' E', I never made it to the door<br>
-                    You speak of hardcore<br>
-                </p>
+                    <p> As the plot thickens, it gives me the dickens, reminiscent of Charles</p>
+                    <p>A lil' discotheque nestled in the ghettos of Niggaville, USA</p>
+                    <p>Via Atlanta, Georgia</p>
+                    <p>A lil' spot where young men and young women go to experience they first little taste of the night life</p>
+                    <p>Me? Well, I've never been there</p>
+                    <p> Well, perhaps, once, but I was so engulfed in the Ol' E', I never made it to the door</p>
+                    <p>You speak of hardcore</p>
             </section>
             <section>
                 <p>
@@ -125,9 +127,9 @@
                 It's just my interpretation of the situation<br>
                 </p>
             </section>
-            <div class="nonbgimg">
+            <section id="angel">
             <img src="img/spottieottedopaliscious-img/angel.png">
-             </div>
+            </section>
             <section>
                 <h2>[Verse 3: Big Boi]</h2>
                 <p>

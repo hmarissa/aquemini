@@ -29,8 +29,15 @@ p{
     line-height: 1.2;
 }
 .lyrics{
-    display: flex;
     gap: 4rem;
+    display: flex;
+    flex-direction: row; /* Ensures horizontal layout */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    white-space:nowrap; /* Prevents text wrapping */
+    /* scroll-snap-type: x mandatory; */
+    width: 100vw;
+    height: 100vh;
 }
 .lyrics section{
     width: 23rem;
@@ -85,6 +92,9 @@ p{
     font-variation-settings: "wght" 500;
     font-size: 20px;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    
 }
   
 li{

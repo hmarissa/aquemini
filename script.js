@@ -1,4 +1,5 @@
 /* Set the width of the side navigation to 250px */
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "450px";
 }
@@ -132,3 +133,15 @@ function timeUpdate() {
         player1.pause();
     }
 }
+
+document.querySelector(".lyrics").addEventListener("wheel", function(event) {
+    event.preventDefault();
+    this.scrollLeft += event.deltaY * 2;
+});
+
+const lyricsContainer = document.querySelector(".lyrics");
+const background = document.querySelector(".scrolling-bg");
+
+lyricsContainer.addEventListener("scroll", function () {
+    background.style.transform = `translateX(${-lyricsContainer.scrollLeft}px)`;
+});

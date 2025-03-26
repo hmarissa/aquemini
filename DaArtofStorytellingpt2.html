@@ -7,25 +7,38 @@
         <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
-            html{
-                width:200vh;
-                height: 100vh;
+            html, body {
+                width: 100vw;
+                overflow-x: hidden;
+                box-sizing: border-box;
             }
-            body{
-                background-image:url(./img/daos2/daos2_bg.jpg);
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200vw; /* Makes it wider so it scrolls */
+                height: 100vh;
+                background-image: 
+                    url(./img/daos2/daos2_bg.jpg);
                 background-position: left top;
                 background-repeat: no-repeat;
-                
+                background-size:contain; /* Adjust if needed */
+                z-index: -1; /* Moves it behind content */
             }
             h1{
                 color: #393a08;
             }
+            #one, #two, #three{
+                padding-top: 14rem;
+            }
            section img{
-           
-            width: 50rem;
-            bottom:0;
+            width: 1000px;
            }
+        .lyrics{
+            padding-left: 10rem;
             
+        }
+        
         </style>
     </head>
     <body>
@@ -70,58 +83,52 @@
                 </div>
             </div>
         </li>
-        <h1>Da Art of Storytellin'</h1>
+        <div class="scrolling-bg"><h1>Da Art of Storytellin'</h1></div>
         <div class="lyrics">
-            <section>
+            <section id="one">
                 <h2>[Verse 1: André 3000]</h2>
-                <p>
-                    "Baby, did you hear that?" "Yeah, baby, I heard it too"<br>
-                    Look out the window, golly, the sky is electric blue<br>
-                    Mama Earth is dying and crying because of you<br>
-                    Raining cats and jackals, all shackles disintegrate to residue<br>
-                    Silly mortals haven't a clue as to what the fuck is going on<br>
-                    I'm on the telephone dialing the Dungeon ("Hello?")<br>
-                    This Dre, bring the MP and the SP<br>
-                    Meet me at the center of the Earth and travel carefully<br>
-                    Baby, grab the baby, 'cause baby, it ain't much time<br>
-                    Mama Earth is tossing and turning and that's a sign<br>
-                </p>
+                <p>"Baby, did you hear that?" "Yeah, baby, I heard it too"</p>
+                <p>Look out the window, golly, the sky is electric blue</p>
+                <p> Mama Earth is dying and crying because of you</p>
+                <p>Raining cats and jackals, all shackles disintegrate to residue</p>
+                <p>Silly mortals haven't a clue as to what the fuck is going on</p>
+                <p>I'm on the telephone dialing the Dungeon ("Hello?")</p>
+                <p>This Dre, bring the MP and the SP</p>
+                <p>Meet me at the center of the Earth and travel carefully</p>
+                <p>Baby, grab the baby, 'cause baby, it ain't much time</p>
+                <p>Mama Earth is tossing and turning and that's a sign</p>
             </section>
-            <section>
-                <p>
-                    Omega, nigga, I.F.O.s are landing in Decatur<br>
-                    Hope I'm not over your head, but if so, you will catch on later<br>
-                    Played the track, guess she could not take it anymo'<br>
-                    Raping her heavenly body like a ho, coochie so'<br>
-                    From niggas constantly fucking her, never loving her<br>
-                    Never showing appreciation, busting nuts in her face when they done<br>
-                </p>
+            <section id="two">
+                <p>Omega, n*gga, I.F.O.s are landing in Decatur</p>
+                <p>Hope I'm not over your head, but if so, you will catch on later</p>
+                <p>Played the track, guess she could not take it anymo'</p>
+                <p>R*ping her heavenly body like a ho, coochie so'</p>
+                <p>From niggas constantly f*cking her, never loving her</p>
+                <p>Never showing appreciation, busting nuts in her face when they done</p>
                 <h2>[Interlude]</h2>
                 <h3>"Who said good folks is not supposed to die?"</h3>
                 </section>
-                <section>
+                <section id="three">
                   <img src="img/daos2/da_art_of_storytelling_gif 2.gif">  
                 </section>
-                <section>
+                <section id="four">
                     <h2>[Verse 2: Big Boi]</h2>
-                    <p>
-                    The sky is falling, nobody balling, they done gave back they guns<br>
-                    For some tickets to the playoffs, but the Hornets, they won<br>
-                    Nigga, we slum, kept all the guns, I gotta protect my family<br>
-                    I drove the biggest thing in the house 'cause I knew they'd try to ram me<br>
-                    But I'm stabbing, making a path on expressway the best way I know how<br>
-                    Look up in the sky, east, west, no clouds<br>
-                    Him coming now, fuck that money now<br>
-                    I ask my honey how she feeling and is Jordan okay? "Yeah, yeah, she chillin'"<br>
-                    We should be at The Dungeon shortly, ain't nobody on they porch, see?<br>
-                    Approaching the final exit, I'm thinking I see four horsies<br>
-                    But I don't though, nigga, you won't know until it's on ya<br>
-                    I put that on my dope boys from A-Town to California<br>
-                    All the weed smell like ammonia, but at the Dungeon I know they're smoking<br>
-                    Writing the raps and doing the beats to make this last recording<br>
-                    Fuck abortion, I got in the booth to run the final portion<br>
-                    The beat was very dirty and the vocals had distortion<br>
-                    </p>
+                    <p>The sky is falling, nobody balling, they done gave back they guns</p>
+                    <p>For some tickets to the playoffs, but the Hornets, they won</p>
+                    <p>N*gga, we slum, kept all the guns, I gotta protect my family</p>
+                    <p>I drove the biggest thing in the house 'cause I knew they'd try to ram me</p>
+                    <p>But I'm stabbing, making a path on expressway the best way I know how</p>
+                    <p>Look up in the sky, east, west, no clouds</p>
+                    <p>Him coming now, f*ck that money now</p>
+                    <p>I ask my honey how she feeling and is Jordan okay? "Yeah, yeah, she chillin'"</p>
+                    <p>We should be at The Dungeon shortly, ain't nobody on they porch, see?</p>
+                    <p>Approaching the final exit, I'm thinking I see four horsies</p>
+                    <p>But I don't though, n*gga, you won't know until it's on ya</p>
+                    <p>I put that on my dope boys from A-Town to California</p>
+                    <p>All the weed smell like ammonia, but at the Dungeon I know they're smoking</p>
+                    <p>Writing the raps and doing the beats to make this last recording</p>
+                    <p>F*ck abortion, I got in the booth to run the final portion</p>
+                    <p>The beat was very dirty and the vocals had distortion</p>
                 </section>
         </div>
         <script src="script.js"></script>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            html, body {
+                width: 100vw;
+                overflow-x: hidden;
+                box-sizing: border-box;
+            }
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200vw; /* Makes it wider so it scrolls */
+                height: 100vh;
+                background-image: 
+                    url(./img/daos2/daos.jpg);
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:contain; /* Adjust if needed */
+                z-index: -1; /* Moves it behind content */
+            }
+            h1{
+                color: #393a08;
+                margin: 1rem 3rem 3rem 3rem;
+            }
+            #one, #two{
+                padding-top: 14rem;
+            }
+           section img{
+            width: 1300px;
+            align-self: center;
+           }
+        .lyrics{
+            padding-left: 15rem;
+            
+        }
+        #four{
+            padding-left: 10rem;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">1.  Hold On, Be Strong</a>
+            <a href="#">2.  Return of the G</a>
+            <a href="#">3.  Rosa Parks</a>
+            <a href="#">4.  Skew it on the Bar-B</a>
+            <a href="#">5.  Aquemini</a>
+            <a href="#">6.  Synthesizer</a>
+            <a href="#">7.  Slump</a>
+            <a href="#">8.  West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html">9.  Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10.  Da Art of Storytellin' (Part 2)</a>
+            <a href="#">11.  Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12.  SpottieOttieDopaliscious</a>
+            <a href="#">13.  Y'all Scared</a>
+            <a href="#">14.  Nathaniel</a>
+            <a href="#">15.  Liberation</a>
+            <a href="#">16.  Chonkyfire</a>
+          </div>
+        <div class="topnav">
+            <span onclick="openNav()">TRACKLIST</span>
+            <a>NOW PLAYING: DA ART OF STORYTELLIN' (PART2)</a>
+            <a>CREDITS</a>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/burst.svg"> </div>
+                    </div>
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/SpottieOttieDopaliscious.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Da Art of Storytellin'</h1></div>
+        <div class="lyrics">
+            <section>
+                <h2>[Verse 1: Big Boi]</h2>
+                <p>Somebody hit me the other day for a rendezvous</p>
+                <p>Was it the b*tch that f*cked the Goodie and the Dungeon Crew?</p>
+                <p>Let's say her name was Suzy Skrew 'cause she screwed a lot</p>
+                <p>Makin' a n*gga hit that chonk at legitimate spots</p>
+                <p>Not no parks, backseats, or things of that nature</p>
+                <p>Had to hate ya, playa</p>
+                <p>I'm d*ckin' the ho down — never said I paid her</p>
+                <p>Straight laid her, slayed the b*tch like Darth Vader, made her</p>
+                <p>From College Park and Fayette all the way down to Decatur</p>
+                <p>Like Jada, her wig was sharp and sporty — that was shawty</p>
+                <p>Safe as a snake on eggs in a Bimmer 840</p>
+            </section>
+            <section>
+                <p>It's foggy, I went to the crib to call her but she lost me</p>
+                <p>My baby mama beeped me, seven o'clock, it's gonna cost me</p>
+                <p>But I still wanna cut her, though — maybe she had to work?</p>
+                <p>I caught her in the mall, wearin' a real tight skirt</p>
+                <p> She was fine as f*ck — I wanted to sex the ho up</p>
+                <p> She said, "Let's hit the parking lot so I can sick your duck"</p>
+                <p>I said, "Cool, I really wanted to cut you but this'll do</p>
+                <p>I gotta pick up my daughter, plus my baby mama beeped me, too"</p>
+                <p>She said she understood and everythin' was kosher</p>
+                <p>I gave her a Lil' Wil CD and a f*ckin' poster</p>
+                <p>It's like that, now</p>
+            </section>
+            <section>
+                <img src="img/daos2/da_art_of_storytelling_.gif">
+            </section>
+            <section>
+                <h2>[Chorus: Sleepy Brown & Big Boi]</h2>
+                <p>It's like that, now</p>
+                <p>You better go on and get the hump up out your back now</p>
+                <p>It's about fo' or five cats off in my 'Lac now</p>
+                <p>We just shoot game in the form of story raps now (Yeah)</p>
+                <p>It's like that now, it's like that now</p>
+
+                <h2>[Verse 2: André 3000]</h2>
+                <p>Now Suzy Skrew had a partner named Sasha... Thumper</p>
+                <p>I remember her number like the summer</p>
+                <p>When her and Suzy, yeah, they threw a slumber</p>
+                <p>Party, but you can not call it that 'cause it was slummer</p>
+                <p>Well, it was more like spend the night</p>
+                <p>Three in the mornin', yawnin', dancin' under street lights</p>
+                <p>We chillin' like a villain, and a n*gga feelin' right</p>
+                <p>In the middle of the ghetto on the curb, but in spite all of the bullsh*t</p>
+            </section>
+            <section>
+                <p>We on our back, starin' at the stars above (Aww, man)</p>
+                <p>Talkin' bout what we gonna be when we grow up (Mm)</p>
+                <p>I said, "What you wanna be?" She said, "Alive"</p>
+                <p>It made me think for a minute, then looked in her eyes</p>
+                <p>I coulda died, time went on, I got grown</p>
+                <p>Rhyme got strong, mind got blown</p>
+                <p>I came back home to find lil' Sasha was gone</p>
+                <p>Her mama said she with a n*gga that be treatin' her wrong (Man)</p>
+                <p>I kept on singin' my song and hopin' at a show</p>
+                <p>That I would one day see her standin' in the front row</p>
+                <p>But two weeks later, she got found in the back of a school</p>
+                <p>With a needle in her arm, baby two months due</p>
+                <p>Sasha Thumper</p>
+                <h2>[Chorus X2]</h2>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

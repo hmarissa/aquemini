@@ -37,8 +37,8 @@ p{
     height: 100vh;
 }
 .lyrics section{
-    width: 23rem;
-    min-width: 40ch;
+    /* width: 23rem; */
+    max-width: 40ch;
 }
 
 

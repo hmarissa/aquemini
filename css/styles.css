@@ -1,8 +1,3 @@
-.nav{
-    position:static;
-    display: flex;
-    justify-content: space-between;
-}
 h1{
     font-family: "casey", sans-serif;
     font-weight: 700;
@@ -14,7 +9,7 @@ h2{
     font-family: "tuppence", serif;
     font-weight: 700;
     font-style: normal;
-    margin-left: -2rem;
+    
 }
 h3{
     font-family: "casey", sans-serif;
@@ -27,6 +22,8 @@ p{
     font-variation-settings: "wght" 300;
     font-size: 1rem;
     line-height: 1.2;
+    margin-left: 1rem;
+    margin-bottom: -0.5rem;
 }
 .lyrics{
     gap: 4rem;
@@ -34,13 +31,14 @@ p{
     flex-direction: row; /* Ensures horizontal layout */
     overflow-x: auto; /* Allows horizontal scrolling */
     overflow-y: hidden; /* Prevents vertical scrolling */
-    white-space:nowrap; /* Prevents text wrapping */
+    /* Prevents text wrapping */
     /* scroll-snap-type: x mandatory; */
     width: 100vw;
     height: 100vh;
 }
 .lyrics section{
     width: 23rem;
+    min-width: 40ch;
 }
 
 
@@ -102,7 +100,7 @@ li{
 }
 .play-pause img {
     padding: 5px 10px 0px 10px;
-    height: 25px; /* Adjust size as needed */
+    height: 25px; 
     cursor: pointer;
 }
 
@@ -121,6 +119,7 @@ div#seekObj1 img {
     position:fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
 }
 
 

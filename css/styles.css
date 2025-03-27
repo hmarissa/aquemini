@@ -48,7 +48,7 @@ p{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #0964aa; /* Black*/
+    background-color: #4b5f6e; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -62,12 +62,12 @@ p{
     font-variation-settings: "wght" 300;
     font-size: 25px;
     line-height: 1.5;
-    color: #509bd5;
+    color: #718fa6;
     display: block;
     transition: 0.15s;
   }
   .currentsong {
-    color: #D5DB00;
+    color: #D7db3f;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -83,8 +83,17 @@ p{
     font-size: 36px;
     margin-left: 50px;
   }
-.topnav span{
+.topnav span, a{
     cursor: pointer;
+}
+.topnav span:hover{
+    color: #D7db3f;
+}
+.topnav a:hover{
+    color: #D7db3f;
+}
+.topnav i{
+    padding-right: 6px;
 }
 .topnav{
     font-family: "space-grotesk-variable", sans-serif;
@@ -93,7 +102,7 @@ p{
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    /* padding: 0 0 0 15px; */
+   padding: 8px;
 }
   
 li{

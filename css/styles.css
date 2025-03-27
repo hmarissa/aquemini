@@ -2,14 +2,15 @@ h1{
     font-family: "casey", sans-serif;
     font-weight: 700;
     font-style: normal; 
-    font-size: 10rem;
+    font-size: 9vw;
     margin-top: 10px;
 }
 h2{
     font-family: "tuppence", serif;
     font-weight: 700;
     font-style: normal;
-    
+    text-transform: capitalize;
+    font-size:1.2vw;
 }
 h3{
     font-family: "casey", sans-serif;
@@ -20,7 +21,7 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 1rem;
+    font-size: 0.9vw;
     line-height: 1.2;
     margin-left: 1rem;
     margin-bottom: -0.5rem;

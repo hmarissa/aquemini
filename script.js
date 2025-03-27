@@ -26,7 +26,11 @@ function initProgressBar() {
     player1 = document.getElementById("player2");
     var playPauseBtn = document.querySelector(".play-pause"); 
     var playPauseImg = document.getElementById("playPauseImg");
-
+   
+    player1.addEventListener("play", function () {
+        console.log("Playing from:", player1.currentTime);
+        document.getElementById("seekObj1").style.display = "block"; // Show the playhead
+    });
     player1.addEventListener("timeupdate", timeCal);
 
     // Play/Pause button functionality

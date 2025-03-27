@@ -66,6 +66,9 @@ p{
     display: block;
     transition: 0.15s;
   }
+  .currentsong {
+    color: #D5DB00;
+  }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
@@ -113,11 +116,29 @@ div#seekObj1 img {
     height: 30px;
    
 }
+#seekObj1 {
+    display: none;
+}
 .audio-player{
     position:fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+}
+
+.next-button{
+    display: inline-flex;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-family: "space-grotesk-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+    font-size: 23px;
+    
+}
+.next-button a{
+    text-decoration: none;
+    color: #000000;
 }
 
 

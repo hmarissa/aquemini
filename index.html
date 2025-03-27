@@ -19,7 +19,7 @@
             }
             .album-title{
                 position: absolute;
-                top: 70vh;
+                top: 65vh;
                 align-items: flex-end;
                 display: flex;
                 flex-direction: column;
@@ -59,9 +59,11 @@
             <div class="audio-player">
                 <div id="seekObjContainer">
                     <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
                         <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
                         <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
                     </div>
+
                 </div>
                 <div class="player-controls scrubber">
                 </div>

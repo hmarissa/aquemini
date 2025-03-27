@@ -64,12 +64,14 @@ function timeCal() {
     var length = player1.duration;
     var current_time = player1.currentTime;
 
-    // Log current time to debug
-    console.log("Current Time:", current_time);
+    var playhead = document.getElementById("seekObj1");
+    var progressFill = document.querySelector(".progress-fill");
 
-    var progressbar = document.getElementById("seekObj1");
-    progressbar.style.marginLeft = width * (player1.currentTime / player1.duration) + "px";
+    var progress = width * (current_time / length);
+    playhead.style.marginLeft = progress + "px";
+    progressFill.style.width = progress + "px";
 }
+
 
 function ballSeek() {
     onplayhead = null;

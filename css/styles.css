@@ -23,11 +23,11 @@ p{
     font-variation-settings: "wght" 300;
     font-size: 0.9vw;
     line-height: 1.2;
-    margin-left: 1rem;
-    margin-bottom: -0.5rem;
+    margin-left: 1vw;
+    margin-bottom: -0.5vw;
 }
 .lyrics{
-    gap: 4rem;
+    gap: 4vw;
     display: flex;
     flex-direction: row; 
     overflow-x: auto; 

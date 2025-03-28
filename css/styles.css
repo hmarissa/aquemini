@@ -9,8 +9,8 @@ h2{
     font-family: "tuppence", serif;
     font-weight: 700;
     font-style: normal;
-    text-transform: capitalize;
-    font-size:1.2vw;
+    text-transform:uppercase;
+    font-size:clamp(1rem,1.2vw, 1.5rem);
 }
 h3{
     font-family: "casey", sans-serif;
@@ -21,7 +21,7 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 1.5vh;
+    font-size: clamp(1rem, 1.4vh,3rem);
     line-height: 1.2;
     margin-left: 1vw;
     margin-bottom: -0.5vw;

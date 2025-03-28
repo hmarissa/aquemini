@@ -34,10 +34,15 @@ p{
     overflow-y: hidden; 
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 .lyrics section {
     /* width: 23rem; */
     min-width: 40ch;
+    position: absolute;
+}
+.lyrics div{
+    position: absolute;
 }
 
 
@@ -162,6 +167,10 @@ div#seekObj1 img {
     font-variation-settings: "wght" 500;
     font-size: 23px;
     
+}
+.next-button:hover{
+   background-color: #D7db3f;
+   transform: scale(1.01);
 }
 .next-button a{
     text-decoration: none;

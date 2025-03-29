@@ -8,45 +8,51 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
-            html, body {
-                width: 100vw;
-                overflow-x: hidden;
-                box-sizing: border-box;
-            }
             .scrolling-bg {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 200vw; /* Makes it wider so it scrolls */
+                width: 200vw; 
                 height: 100vh;
                 background-image: 
                     url(./img/spottieottedopaliscious-img/FINAL_SpottieOttieDopaliscious_1.gif), 
                     url(./img/spottieottedopaliscious-img/spottiebg.jpg);
                 background-position: left top, right top;
                 background-repeat: no-repeat, no-repeat;
-                background-size:contain; /* Adjust if needed */
-                z-index: -1; /* Moves it behind content */
+                background-size:contain, cover;
+                z-index: -1; 
             }
-            #white{
+            h1{
+                color: #A2A8DD;
+                position: relative;
+                left:10vw;
+                top:3vh
+            }
+            #one{
                 color: rgb(255, 255, 255);
-                padding: 10rem 5rem 0 0 ;
+                position: relative;
+                left:65vw;
+                top: 16vh;
+            }
+            #two, #three, #four{
+                position: relative;
+                left: 70vw;
+            }
+            #five{
+                left: 110vw;
+                top: 20vh;
+            }
+             #five img{
+              height: 80vh;
+            }
+            #six, #seven, #eight{
+                position: relative;
+                left:100vw;
             }
             h3{
                 text-align: right;
             }
-            h1{
-                color: #A2A8DD;
-                margin: 1rem 3rem 3rem 3rem;
-            }
-            #angel img{
-              height: 70vh;
-             margin-left: -50rem;
-             
-             /* padding-top: 10rem; */
-            }
-            .lyrics{
-                padding-left: 65vw;
-            }
+          
         </style>
     </head>
     <body>
@@ -93,7 +99,7 @@
 
         <div class="scrolling-bg"> <h1>SpottieOttieDopaliscious</h1></div>
         <div class="lyrics">
-            <section id="white">
+            <section id="one">
                 <h2>[Verse 1: Sleepy Brown]</h2>
                 <p>Dickie shorts, Lincoln's clean</p>
                     <p>Leanin', checking out the scene</p>
@@ -105,7 +111,7 @@
                     <p>Watch out, here come the folk— "Damn"</p>
                     <p>Oh, Lord</p>
             </section>
-            <section>
+            <section id="two">
                 <h2>[Verse 2: André 3000]</h2>
                     <p> As the plot thickens, it gives me the dickens, reminiscent of Charles</p>
                     <p>A lil' discotheque nestled in the ghettos of N*ggaville, USA</p>
@@ -115,7 +121,7 @@
                     <p> Well, perhaps, once, but I was so engulfed in the Ol' E', I never made it to the door</p>
                     <p>You speak of hardcore</p>
             </section>
-            <section>
+            <section id="three">
                 <p>While the DJ sweatin' out all the problems and troubles of the day</p>
                 <p>While this fine, bow-legged girl, fine as all outdoors, lulls lukewarm lullabies in your left ear</p>
                 <p>Competing with "Set It Off" in the right</p>
@@ -123,16 +129,16 @@
                 <p>"Hey, hey—look, baby, they playin' our song!"</p>
                 <p>And the crowd goes wild, as if Holyfield has just won the fight</p>
             </section>
-            <section>
+            <section id="four">
                 <p>But in actuality, it's only about 3 a.m., and three n*ggas just done got hauled off in the ambulance, sliced up</p>
                 <p>Two n*ggas done started busting—"Wham! Wham!"</p>
                 <p>And one n*gga done took his shirt off, talking 'bout, "Now, who else wanna f*ck with Hollywood Court?"</p>
                 <p>It's just my interpretation of the situation</p>
             </section>
-            <section id="angel">
+            <div id="five">
             <img src="img/spottieottedopaliscious-img/angel.png">
-            </section>
-            <section>
+            </div>
+            <section id="six">
                 <h2>[Verse 3: Big Boi]</h2>
                 <p>
                     Yes! When I first met my
@@ -144,7 +150,7 @@
                 <p>I walked up on her and was almost paralyzed</p>
                 <p>Her neck was smelling sweeter than a plate of yams with extra syrup</p>
             </section>
-            <section>
+            <section id="seven">
                 <p>Eyes beaming like four karats apiece, just blindin' a n*gga</p>
                 <p> Felt like I chiefed a whole O of that Presidential</p>
                 <p>My heart was beating so damn fast</p>
@@ -153,7 +159,7 @@
                 <p>One moment, you frequent the booty clubs, and the next four years, you and somebody's daughter raisin' y'all own young'n</p>
                 <p>Now, that's a beautiful thang</p>
             </section>
-            <section>
+            <section id="eight">
                 <p>That's if you're on top of your game and man enough to handle real-life situations, that is</p>
                 <p>Can't gamble feeding a baby on that dope money</p>
                 <p>Might not always be sufficient</p>
@@ -161,6 +167,9 @@
                 <p>So now, you back in the trap</p>
                 <p>Just that: trapped!</p>
                 <p>Go'n' and marinate on that for a minute</p>
+                <div class="next-button">
+                    <a href="SpottieOttieDopaliscious.html">SYNTHESIZER <i class="bi bi-skip-forward-fill"></i></a>
+                </div>
             </section>
         </div>
         <script src="script.js"></script>

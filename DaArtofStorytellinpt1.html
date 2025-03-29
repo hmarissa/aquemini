@@ -9,10 +9,6 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
             
-            html, body {
-                width: 100vw;
-                overflow-x: hidden;
-            }
             .scrolling-bg {
                 position: absolute;
                 top: 0;
@@ -23,26 +19,42 @@
                     url(./img/daos2/daos.jpg);
                 background-position: left top;
                 background-repeat: no-repeat;
-                background-size:contain; 
+                background-size:cover; 
                 z-index: -1; 
             }
             h1{
                 color: #40488C;
-                margin: 1rem 3rem 3rem 3rem;
-            }
-            .lyrics section, #three{
                 position: relative;
-                left: 15rem;
+                left:10vw;
+                top:3vh
+            }
+            .lyrics section{
+                position: relative;
+                left: 10vw;
+                z-index: 10;
             }
             #one, #two{
-                top: 14rem;
+                top: 20vh;
             }
-           
+           #three {
+            left: 54vw;
+            bottom: 9vh;
+            z-index: -1;
+           }
           #three img{
-            width: 1300px;
+            width: 60vw;
             align-self: center;
            }
-                   
+           #four, #five{
+            position: relative;
+            left: 60vw;
+           }
+           .lyrics section{
+                z-index: 10;
+            } 
+            #five{
+                padding-right: 3vw;
+            }   
         </style>
     </head>
     <body>
@@ -151,6 +163,9 @@
                 <p>With a needle in her arm, baby two months due</p>
                 <p>Sasha Thumper</p>
                 <h2>[Chorus X2]</h2>
+                 <div class="next-button">
+                <a href="DaArtofStorytellingpt2.html">  DA ART OF STORYTELLIN (PART 2) <i class="bi bi-skip-forward-fill"></i></a>
+            </div>
             </section>
         </div>
         <script src="script.js"></script>

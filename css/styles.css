@@ -43,7 +43,7 @@ p{
     position: relative;
 }
 .lyrics section {
-    /* width: 23rem; */
+    min-width: 40ch;
     max-width: 40ch;
     position: absolute;
 }

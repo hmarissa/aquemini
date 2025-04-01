@@ -81,7 +81,7 @@ p{
     display: block;
     transition: 0.15s;
   }
-  .currentsong {
+  #current-page{
     color: #D7db3f;
   }
   

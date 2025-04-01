@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image: 
+                    url(./img/slump/slumpbg.jpg);
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:contain; 
+                z-index: -1; 
+            }
+            h1{
+                color: #262c64;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
+            <a href="#">2    Return of the G</a>
+            <a href="rosaparks.html">3    Rosa Parks</a>
+            <a href="#">4    Skew it on the Bar-B</a>
+            <a href="aquemini.html"  >5    Aquemini</a>
+            <a href="#">6    Synthesizer</a>
+            <a id="current-page" href="slump.html">7    Slump</a>
+            <a href="#">8    West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
+            <a href="#">11    Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
+            <a href="#">13    Y'all Scared</a>
+            <a href="#">14    Nathaniel</a>
+            <a href="#">15    Liberation</a>
+            <a href="#">16    Chonkyfire</a>
+          </div>
+          <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>NOW PLAYING</span>
+            <a><i class="bi bi-disc-fill"></i>ALBUM CREDITS</a>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/rosaparks.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Slump</h1></div>
+        <div class="lyrics">
+            <div id="one">
+                <img src="img/slump/slump car.gif">
+            </div>
+            <section id="two">
+                <h2>[Intro: Backbone & Theresa Hightower]</h2>
+                <p>Baby gotta eat</p>
+                <p>Yeah (Yeah)</p>
+                <p>Off the top (Off the top)</p>
+                <p>Slick partner (Slick partner)</p>
+            </section>
+            <section id="three">
+                <p>Know about it (Know about it)</p>
+                <p> Jump back (Jump back)</p>
+                <p> Come on (Come on, come on)</p>
+                <p> Yeah (Yeah, yeah, yeah, yeah)</p>
+                <h2>[Verse 1: Backbone]</h2>
+                <p>From front to back street, listen, we on a mission</p>
+                <p> To get right, work the street corner in the midnight</p>
+                <p> Picture the scene, these fiends with five</p>
+                <p> Ten dollar dreams, scheme, for a sack of that, believe that</p>
+                <p> I'm wit' whateva like Wheatstraw</p>
+                <p> Stuck servin' my cocaine raw</p>
+            </section>
+            <section id="four">
+                <p>Drop sixty-two off the brick, jump back</p>
+                <p>  Twenty over, now that's mo' money to get</p>
+                <p>  Slick, we finna lick on this corner without gettin' caught</p>
+                <p>  But time, keep a slippin' and money gettin' short</p>
+                <p>  Plus that crooked cop Brock think we blow slangin' (fuck him)</p>
+                <p>  That why he ride through the hole with the do' swangin'</p>
+                <p>  But I make moves, shake them tricks up out they shoestrings</p>
+                <p>  We more precise when we do things</p>
+                <p>  'Cause life like shakin' the dice, but I buck back twice</p>
+                <p>  Like five-deuce, four-trey, okay</p>
+            </section>
+            <section id="five">
+                <h2>[Chorus: Backbone]</h2>
+                <p>I'm strictly stressin' dirty dirty, gon' represent it to the T-top</p>
+                <p> Born and bred up on the street top</p>
+                <p> Get to the money in a sweet spot</p>
+                <p>And forever hollerin' "Hootie Hoo!" when we see cops</p>
+                <p>I'm strictly stressin' dirty dirty, gon' represent it to the T-top</p>
+                <p>Born and bred up on the street top</p>
+                <p>Get to the money in a sweet spot</p>
+                <p>And forever hollerin' </p>
+                <h3>“Hootie Hoo!”</h3>
+                <p>when we see cops</p>
+            </section>
+            <section id="six">
+                <h2>[Verse 2: Big Boi]</h2>
+                <p>Shit, cops and robbers, niggas be bound to get them dollars and cents</p>
+                <p>They get in a slump like baseball players when they short on they rent</p>
+                <p>Anything goin', you ain't knowin' how much money you spent</p>
+                <p>But in the real world you surrounded by these ladies and gents</p>
+                <p>Who hang around you 'cause you be buyin' all the weed and all the chicken</p>
+                <p>Feedin' everybody, smokin' 'em out</p>
+                <p>When you was broke, though, they was missin'</p>
+                <p>Now you ridin' 'bout four deep, startin' to tear up your suspension</p>
+                <p>And your baby mama on child support, my fault, forgot to mention</p>
+                <p>You don't even have a checking account wasn't thinking about no pension</p>
+                <p>I used to work at Steak 'N' Ale, Old Gold off in the kitchen</p>
+            </section>
+            <section id="seven">
+                <p>Had determination and graduated, now I got the whole rap world fascinated</p>
+                <p>I wanted a piece of the pie for me and my family so I made it</p>
+                <p>Continue to sell dope, it's payin' the bills so you gon' do it</p>
+                <p>But legislation got this new policy: three strikes and you're ruined</p>
+                <p>Now where your crew at? Yeah</p>
+                <h2>[Chorus]</h2>
+                <div class="next-button">
+                    <a href="SpottieOttieDopaliscious.html">WEST SAVANNAH<i class="bi bi-skip-forward-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

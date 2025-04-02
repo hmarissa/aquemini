@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image: ;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:cover; 
+                z-index: -1; 
+            }
+            h1{
+                color: #262c64;
+                position: relative;
+                left:10vw;
+                top:8vh;
+            }
+            section img{
+                height: 80vh;
+            }
+            .lyrics section{
+                position: relative;
+                left:10vw;
+            }
+           #one, #two{
+            top: 20vh;
+           }
+           #four, #five{
+            left:30vw;
+           }
+           #six{
+            left: 30vw;
+           }
+           #seven, #eight{
+            left:50vw;
+           }
+            #eight{
+                padding-right: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
+            <a href="#">2    Return of the G</a>
+            <a href="rosaparks.html">3    Rosa Parks</a>
+            <a href="#">4    Skew it on the Bar-B</a>
+            <a href="aquemini.html"  >5    Aquemini</a>
+            <a href="#">6    Synthesizer</a>
+            <a  href="slump.html">7    Slump</a>
+            <a href="#">8    West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
+            <a id="current-page" href="mamacita.html">11    Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
+            <a href="yallscared.html">13    Y'all Scared</a>
+            <a href="#">14    Nathaniel</a>
+            <a href="liberation.html">15    Liberation</a>
+            <a href="#">16    Chonkyfire</a>
+          </div>
+          <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>NOW PLAYING</span>
+            <a><i class="bi bi-disc-fill"></i>ALBUM CREDITS</a>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/rosaparks.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Liberation</h1></div>
+        <div class="lyrics">
+            <section id="one">
+                <h2>[Verse 1: André 3000]</h2>
+                <p>There's a— there's a— there's a— there's a fine line </p>
+                <p> Too late, but baby, I'm on it, yeah, yeah, yeah (Yo, yo, uh-huh) </p>
+                <p>There's a fine line between love and hate, you see </p>
+                <p> Came way too late but, baby, I'm on it </p>
+                <p> There's a fine line between love and hate, you see </p>
+                <p> Came way too late but, baby, I'm on it </p>
+                <p>  Can't worry 'bout what a nigga think </p>
+                <p>  Now see, that's liberation and, baby, I want it </p>
+                <p>  Can't worry 'bout what another nigga think </p>
+                <p>  Now that's liberation and, baby, I want it </p>
+                <p>  (Lemme hear it, lemme hear it, lemme though, lemme hear it) </p>
+            </section>
+            <section id="two">
+                   <h2>[Verse 2: Big Boi]</h2>
+                    <p> How many times I sit back and contemplate?</p>
+                    <p> I'm fresh off the dank but I'm tellin' my story</p>
+                    <p>My relationship with my folks is give-and-take</p>
+                    <p>And I done took so much, now give me my glory</p>
+                    <p> To have a choice to be who you wants to be</p>
+                    <p> It's left up-a to me and my mama n'em told me (Yes, she did)</p>
+                    <p> I say, to have a choice to be who you wants to be</p>
+                    <p> It's left up-a to me and my mama n'em told me</p>
+            </section>
+            <section id="three">
+                <img src="img/liberation/liberation.png">
+            </section>
+            <section id="four">
+                <h2>[Verse 3: Cee-Lo Green]</h2>
+                <p>No, no, no (Ah)</p>
+                <p>  I'm so tired, it's been so long struggling</p>
+                <p>  Hopelessly settling for the day (Hey)</p>
+                <p>  Oh, I sacrifice every breath I breathe</p>
+                <p>  To make you believe I'd give my life away</p>
+                <p>  Oh, Lord, I'm so tired, I'm so tired (Tired)</p>
+                <p>  My feet feel like I walked most of the road on my own (Own)</p>
+                <p>   All on my own (Yeah)</p>
+                <p>   We alive but we ain't livin', that's why I'm givin' until it's gone</p>
+                <p>   'Cause I don't wanna be alone (I don't wanna be alone)</p>
+                <p>   I don't wanna be alone (Yeah) (No, no, no)</p>
+                <p>   If anything I can say to help you find your way</p>
+                <p>  Touch your soul, make it whole, the same for you and I</p>
+                <p>  There's not a minute that goes by that I don't believe we could fly</p>
+                <p>  But I can feel it in the wind, beginning or the end</p>
+                <p>  But people, keep your head to the sky</p>
+            </section>
+            <section id="five">
+                <h2>[Refrain: Joi & Peaches]</h2>
+                <p>Shake that load off, shake that load off</p>
+                <p>  Shake that load off, shake that load off</p>
+                <p>  Shake that load off, shake that load off</p>
+                <p>  Shake that load off, shake that load off</p>
+                <p>  Shake that load off, shake that load off</p>
+            </section>
+            <section id="six">
+                <img src="img/liberation/liberation 2.png">
+            </section>
+            <section id="seven">
+                <h2>[Verse 4: Erykah Badu]</h2>
+                <p>Folk in your face, you're a superstar</p>
+                <p>  Niggas hang around 'cause of who you are</p>
+                <p>  You get a lot of love 'cause of what you got</p>
+                <p>  Say they happy for you but they really not</p>
+                <p>  Sell a lot of records and you roll a Benz</p>
+                <p>  Swoll up in the spot, now you losing friends</p>
+                <p>   All you wanna do is give the world your heart</p>
+                <p>   Record label tried to make you compromise your art</p>
+                <p>   You make a million dollars, make a million mo'</p>
+                <p>   First class broad treat you like a nigga po'</p>
+                <p>   You wanna say "Wait!" but you're scared to ask</p>
+                <p>   As your world starts spinning and it's moving fast</p>
+                <p>   Tryna stay sane is the price of fame</p>
+                <p>   Spending your life tryna numb the pain</p>
+                <p>   You shake that load off and sing your song</p>
+                <p>   Liberate the minds, then you go on home</p>
+            </section>
+            <section id="eight">
+                <h2>[Outro: Big Rube]</h2>
+                <p>I must admit, they planted a lot of things</p>
+                <p>   In the brains and the veins of my strain</p>
+                <p>   Makes it hard to refrain, from the host of cocaine</p>
+                <p>  From them whores, from the flame</p>
+                <p>  From a post in the game</p>
+                <p>  Makes it hard to maintain focus</p>
+                <p>   They're from the Glock rounds, and lockdowns, and burials</p>
+                <p>   The seeds that sow, get devoured by the same locusts</p>
+                <p>   'Cause it's a hard row to hoe</p>
+                <p>   If your ass don't move, and the rain don't fall</p>
+                <p>   And the ground just dry</p>
+                <p>   But the roots are strong, so some survive</p>
+                <p>   To your surprise, now I voice their cries</p>
+                <p>   You got more juice than Zeus</p>
+                <p>   Slangin' lightnin' tryin' to frighten</p>
+                <p>  Plains dwellers of the Serengeti</p>
+                <p>  But get beheaded when you falsely dreaded</p>
+                <p>  Melanin, silicone and collagen injected</p>
+                <p>  Dissectin' my pride — who the one gon' get it started?</p>
+                <p>  We be the lionhearted, without infanticide</p>
+                <p>   It's like that red sprite, you can't imagine it</p>
+                <p>   Unless you lookin' at the canvas of life</p>
+            </section>
+            <section id="nine">
+                <p>Not through the peephole of mortality</p>
+                <p> Single-minded mentality</p>
+                <p> Gettin' over on loopholes</p>
+                <p> Gettin' paid two-fold on technicalities</p>
+                <p>  Clickin' your heels but scared to voice how you feel</p>
+                <p>  Packing steel</p>
+                <p>  Pickin' cotton from the killing fields with no toe, though</p>
+                <p>  I don't think we in Kansas no mo' though</p>
+                <p>  Midwest or Dirty South</p>
+                <p>  Clean dressed or dirty mouth</p>
+                <p>   Whether robbin' preachers or killin' Poor Righteous Teachers</p>
+                <p>  You a scared demon</p>
+                <p>  Shouldn't be allowed to spread semen</p>
+                <p>  And you cowardly lions never defyin' the jackals of Babel</p>
+                <p>   Runnin' with they pack, tail between your legs</p>
+                <p>   Though the mane on your head say the story</p>
+                <p>   As you downplay your glory</p>
+                <p>  Cacklin', helpin' the shacklin' of your brethren happening</p>
+                <p>  Just by rappin'</p>
+                <p>   Libertad</p>
+                <div class="next-button">
+                    <a href="SpottieOttieDopaliscious.html">SPOTTIEOTTIEDOPALISCIOUS<i class="bi bi-skip-forward-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

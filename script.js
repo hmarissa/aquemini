@@ -9,6 +9,15 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+function openCredits() {
+    document.getElementById("albumCredits").style.width = "450px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeCredits() {
+    document.getElementById("albumCredits").style.width = "0";
+}
+
 var player1, onplayhead, playerId, timeline, playhead, timelineWidth;
 
 jQuery(window).on("load", function () {

@@ -71,6 +71,42 @@ p{
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
+  .credits{
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 99; 
+    top: 0; 
+   right: 0;
+    background-color: #4b5f6e; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+  }
+ .credits .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  .credits p{
+    padding: 8px 8px 8px 32px;
+    font-family: "space-grotesk-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #f1f1f1;
+    display: block;
+  }
+  .credits a{
+      text-decoration: none;
+      color: #718fa6;
+      transition: 0.15s;
+  }
+  .credits a:hover{
+    color: #f1f1f1;
+  }
   
   /* The navigation menu links */
   .sidenav a {

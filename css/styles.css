@@ -4,6 +4,9 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
+html{
+    background-color: #e3ecf3;
+}
 h1{
     font-family: "p22-torrone", sans-serif;
     font-weight: 400;

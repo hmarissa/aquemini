@@ -14,10 +14,10 @@
                 left: 0;
                 width: 250vw; 
                 height: 100vh;
-                background-image: ;
+                background-image:url(img/liberation/liberationbg.jpg) ;
                 background-position: left top;
                 background-repeat: no-repeat;
-                background-size:cover; 
+                background-size:contain; 
                 z-index: -1; 
             }
             h1{
@@ -27,7 +27,7 @@
                 top:8vh;
             }
             section img{
-                height: 80vh;
+                height: 90vh;
             }
             .lyrics section{
                 position: relative;
@@ -36,25 +36,29 @@
            #one, #two{
             top: 20vh;
            }
-           #four, #five{
-            left:30vw;
+           #three, #six{
+            top:6vh;
+           }
+           #three{
+            left:-30vw;
+           }
+           #four{
+            top:10vh;
+           }
+           #five{
+            top:50vh;
            }
            #six{
-            left: 30vw;
+            left:-10vw;
            }
-           #seven, #eight{
-            left:50vw;
-           }
-            #eight{
-                padding-right: 3rem;
-            }
+          
         </style>
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
-            <a href="#">2    Return of the G</a>
+            <a href="returnoftheg.html">2    Return of the G</a>
             <a href="rosaparks.html">3    Rosa Parks</a>
             <a href="#">4    Skew it on the Bar-B</a>
             <a href="aquemini.html"  >5    Aquemini</a>
@@ -63,16 +67,20 @@
             <a href="#">8    West Savannah</a>
             <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
             <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
-            <a id="current-page" href="mamacita.html">11    Mamacita</a>
+            <a  href="mamacita.html">11    Mamacita</a>
             <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
             <a href="yallscared.html">13    Y'all Scared</a>
             <a href="#">14    Nathaniel</a>
-            <a href="liberation.html">15    Liberation</a>
+            <a id="current-page" href="liberation.html">15    Liberation</a>
             <a href="#">16    Chonkyfire</a>
           </div>
-          <div class="topnav">
+          <div id="albumCredits" class="credits">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCredits()">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut facere dolore ducimus repellat fugit? Ullam reprehenderit officia cum animi recusandae quam ducimus nihil enim, neque corrupti doloribus repellat dolor!</p>
+          </div>
+        <div class="topnav">
             <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>NOW PLAYING</span>
-            <a><i class="bi bi-disc-fill"></i>ALBUM CREDITS</a>
+            <span onclick="openCredits()"><i class="bi bi-disc-fill"></i>ALBUM CREDITS</span>
         </div>
         <li>
             <div class="audio-player">
@@ -188,6 +196,8 @@
                 <p>   But the roots are strong, so some survive</p>
                 <p>   To your surprise, now I voice their cries</p>
                 <p>   You got more juice than Zeus</p>
+            </section>
+            <section id="nine">
                 <p>   Slangin' lightnin' tryin' to frighten</p>
                 <p>  Plains dwellers of the Serengeti</p>
                 <p>  But get beheaded when you falsely dreaded</p>
@@ -196,8 +206,6 @@
                 <p>  We be the lionhearted, without infanticide</p>
                 <p>   It's like that red sprite, you can't imagine it</p>
                 <p>   Unless you lookin' at the canvas of life</p>
-            </section>
-            <section id="nine">
                 <p>Not through the peephole of mortality</p>
                 <p> Single-minded mentality</p>
                 <p> Gettin' over on loopholes</p>
@@ -205,6 +213,8 @@
                 <p>  Clickin' your heels but scared to voice how you feel</p>
                 <p>  Packing steel</p>
                 <p>  Pickin' cotton from the killing fields with no toe, though</p>
+            </section>
+            <section id="ten">
                 <p>  I don't think we in Kansas no mo' though</p>
                 <p>  Midwest or Dirty South</p>
                 <p>  Clean dressed or dirty mouth</p>
@@ -219,7 +229,7 @@
                 <p>  Just by rappin'</p>
                 <p>   Libertad</p>
                 <div class="next-button">
-                    <a href="SpottieOttieDopaliscious.html">SPOTTIEOTTIEDOPALISCIOUS<i class="bi bi-skip-forward-fill"></i></a>
+                    <a href="SpottieOttieDopaliscious.html">CHONKYFIRE<i class="bi bi-skip-forward-fill"></i></a>
                 </div>
             </section>
         </div>

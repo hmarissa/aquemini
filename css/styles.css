@@ -54,6 +54,7 @@ p{
 }
 @media screen and (max-width: 2600px) {
     .lyrics section{
+        max-width: 35ch;
         min-width: 35ch;
     }
 }

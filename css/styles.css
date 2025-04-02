@@ -31,7 +31,7 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: clamp(1rem, 1.4vh,3rem);
+    font-size: 1.6vh;
     line-height: 1.2;
     margin-left: 1vw;
     margin-bottom: -0.5vw;

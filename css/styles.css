@@ -31,7 +31,7 @@ h3{
 p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: clamp(14px, 0.85vw, 20px);
+    font-size: clamp(14px, 0.9vw, 20px);
     line-height: 1.2;
     margin-left: 1vw;
     margin-bottom: -0.5vw;
@@ -51,7 +51,11 @@ p{
     min-width: 40ch;
     max-width: 40ch;
     position: absolute;
-    
+}
+@media screen and (max-width: 768px) {
+    .lyrics section{
+        min-width: 35ch;
+    }
 }
 .lyrics div{
     position: absolute;

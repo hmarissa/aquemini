@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image: 
+                    url(./img/synthesizer/synthesizerbg.jpg);
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:contain; 
+                z-index: -1; 
+            }
+            h1{
+                color: #262c64;
+                position: relative;
+                left:15vw;
+                top:8vh;
+            }
+            #three img{
+                height: 50vh;
+            }
+            
+            #six img{
+                height: 100vh;
+            }
+            .lyrics section{
+                position: relative;
+                left:15vw;
+            }
+           #one, #two{
+            top: 20vh;
+           }
+           #four, #five{
+            left:25vw;
+           }
+           #five{
+            top:33vh;
+           }
+           
+           #seven{
+            left: 55vw;
+            padding-right: 3vh;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
+            <a href="returnoftheg.html">2    Return of the G</a>
+            <a href="rosaparks.html">3    Rosa Parks</a>
+            <a href="#">4    Skew it on the Bar-B</a>
+            <a href="aquemini.html"  >5    Aquemini</a>
+            <a href="synthesizer.html">6    Synthesizer</a>
+            <a  href="slump.html">7    Slump</a>
+            <a href="#">8    West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
+            <a href="mamacita.html">11    Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
+            <a id="current-page" href="yallscared.html">13    Y'all Scared</a>
+            <a href="#">14    Nathaniel</a>
+            <a href="liberation.html">15    Liberation</a>
+            <a href="#">16    Chonkyfire</a>
+          </div>
+          <div id="albumCredits" class="credits">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCredits()">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut facere dolore ducimus repellat fugit? Ullam reprehenderit officia cum animi recusandae quam ducimus nihil enim, neque corrupti doloribus repellat dolor!</p>
+          </div>
+        <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>TRACKLIST</span>
+            <span onclick="openCredits()"><i class="bi bi-disc-fill"></i>ALBUM CREDITS</span>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/yallscared.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Synthesizer</h1></div>
+        <div class="lyrics">
+            <section id="one">
+                <h2>[Intro: André 3000 & George Clinton]</h2>
+                <p>Everybody's got opinions</p>
+                <p> On the way you're living (oooh)</p>
+                <p>  But, see, they can't fill your shoes</p>
+                <p>   Life is made of half illusion (evolution)</p>
+                <p>   Forty percent confusion (oooh)</p>
+                <p>  Whatever's left I'm using to keep myself from losing, yeah</p>
+                <p>  You don't know what I've been through (oooh)</p>
+                <p>  Hell, I might go through you (Data boys are horny tonight)</p>
+                <p>  Uh-oh, oh-no-oahohh (Data boys are horny tonight)</p>
+                <p>  Hey, hey, hey, hey (SCSIs with a booty in her face)</p>
+                <p>   And mm-mmmmmm (Modem seeking, data searching, access sleeping)</p>
+                <p>  All in all, it's all in my head</p>
+            </section>
+            <section id="two">
+                <h2>[Verse 1: Big Boi]</h2>
+                <p> You know it's that high guy, from East P.I</p>
+                <p>  Spittin the realness of reality, you mad at me</p>
+                <p>  Boy, how you gonna handle me?</p>
+                <p>  You want me to lolligag and talk that bullshit?</p>
+                <p>  I refuse to play so I'm gon' speak that Southern good shit</p>
+                <p>  That harder than yo' hood shit, lil' shit</p>
+                <p>  That make y'all niggas think about the trigger</p>
+                <p>  Before you pull it, on liquor stores and banks</p>
+                <p>  Them folks got more than enough bullets to put that ass</p>
+                <p>   Off in the slang, don't claim no gang, we the niggas</p>
+                <p>  That did that "Ain't No Thang But a Chicken Wang"</p>
+                <p>  But still though, how you gonna play a nigga like dildo</p>
+                <p>   We OutKast til it's over, barbecue and never mildew</p>
+                <p>  For real bro, yeah</p>
+            </section>
+            <section id="three">
+                <img src="img/synthesizer/synthesizer1.gif" alt="tv">
+                <p>"In tonight's news, 20th century technology:</p>
+                <p>   Einstein or Frankenstein?</p>
+                <p> Has the computer age, scientists, and doctors gone too far?</p>
+                <p> Einstein or Frankenstein?</p>
+                <p> Dr. Scholl's, or Dr. Jekyll and Mr. Hyde?</p>
+                <p> Are we digging into new ground</p>
+                <p> Or digging our own graves? Story at 11"</p>
+                <h2>[Hook: Andre 3000 & George Clinton]</h2>
+                <p>Synthesizer (X4)</p>
+            </section>
+            <section id="four">
+                <h2>[Verse 2: George Clinton]</h2>
+                <p>Conceived under the influence of toxic wasted doctors</p>
+                <p>   Computer bugging debugging devices and vice versa</p>
+                <p>   And various viruses</p>
+                <p>  Performing with laser light precision and verbal incision</p>
+                <p>  For a lingustic ballistic lobotomy</p>
+                <p>   Mind-fuckin you, a psycho-sodomy of the medulla oblongata</p>
+                <p>   Exit your mind down your spine and out your behind</p>
+                <p>   Fuck you</p>
+                <h2>[Verse 3: André 3000 & George Clinton]</h2>
+                <p>Synthesizer, microwave me (Cybersites are horny tonight)</p>
+                <p>   Give me a drug so I can make seven babies</p>
+                <p>   Pump my breasts up, can you suck the fat up (Fuzzy logic therapeutic country)</p>
+                <p>   Please make my life appear like ain't no such thing as bad luck (You wanted that? A holiday)</p>
+                <p>  My nose ain't right, think I need a new one</p>
+                <p>  Just take your pick, a yellow, red, a black, or a blue one</p>
+            </section>
+            <section id="five">
+                <p>Virtual reality? virtual bullshit! (Cybersexy Wendy web walking in the nude)</p>
+                <p> Synthesizer preachers can reach you up in the pulpit</p>
+                <p> Who a bitch? (Digital good time)</p>
+                <p> Give me my gat so I can smoke this nigga</p>
+                <p> Tell his momma not to cry (Digital good time)</p>
+                <p> Because they can clone him quicker</p>
+                <p> Than it took his daddy to make him</p>
+                <p> Niggas bitin verbatim (Said she'd lapdance on your laptop, while your laptops in your lap)</p>
+                <p> Thought provokin' records radio never played dem</p>
+            </section>
+            <section id="six">
+                <img src="img/synthesizer/synthesizer2.png">
+            </section>
+            <section id="seven">
+                <p>Instant, quick grits, new, improved (Digital good time)</p>
+                <p> Hurry hurry, rush rush, world on the move (Digital good time)</p>
+                <p> Marijuana illegal but cigarettes cool</p>
+                <p> I might look kinda funny but I ain't no fool (Cyber sexy Cindy web walking in the nude)</p>
+                <p> Now if you wanna synthesize I empathize (Digital good time)</p>
+                <p> Now if you wanna synthesize I empathize (Digital good time)</p>
+                <p> But if you synthesize I will understand (A tail ain't nothing but a long booty, ain’t nothin but a butt)</p>
+                <p> You'll synthesize a man</p>
+                <h2>[Hook]</h2> 
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

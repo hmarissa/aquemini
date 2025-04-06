@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image:url(img/skewitonthebarb/skewitbg.jpg) ;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:contain; 
+                z-index: -1; 
+            }
+            h1{
+                color: #262c64;
+                position: relative;
+                left:10vw;
+                top:8vh;
+            }
+            .lyrics section{
+                position: relative;
+                left:10vw;
+            }
+           #one, #two{
+            top: 20vh;
+           }
+           #three img, #five img{
+            height: 80vh;
+           }
+          #six img{
+            height: 30vh;
+          }
+          #five{
+            top:10vh;
+            left:-3vw;
+          }
+          #four{
+            left:15vw;
+          }
+          #seven{
+            top:30vh;
+          }
+         
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
+            <a href="returnoftheg.html">2    Return of the G</a>
+            <a href="rosaparks.html">3    Rosa Parks</a>
+            <a id="current-page" href="skewitonthebar-b.html">4    Skew it on the Bar-B</a>
+            <a href="aquemini.html"  >5    Aquemini</a>
+            <a href="synthesizer.html">6    Synthesizer</a>
+            <a  href="slump.html">7    Slump</a>
+            <a href="#">8    West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
+            <a  href="mamacita.html">11    Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
+            <a href="yallscared.html">13    Y'all Scared</a>
+            <a href="#">14    Nathaniel</a>
+            <a href="liberation.html">15    Liberation</a>
+            <a href="#">16    Chonkyfire</a>
+          </div>
+          <div id="albumCredits" class="credits">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCredits()">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut facere dolore ducimus repellat fugit? Ullam reprehenderit officia cum animi recusandae quam ducimus nihil enim, neque corrupti doloribus repellat dolor!</p>
+          </div>
+        <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>TRACKLIST</span>
+            <span onclick="openCredits()"><i class="bi bi-disc-fill"></i>ALBUM CREDITS</span>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/liberation.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Skew it on the Bar-B</h1></div>
+        <div class="lyrics">
+            <section id="one">
+                <h2>[Intro: André 3000]</h2>
+                 <p>(Yeah) Yeah, yeah, yeah (Woo), rrah</p>
+                <h2>[Chorus: André 3000]</h2>
+                <p>  Old school players to new school fools</p>
+                <p> 'Kast keep it jumping like kangaroos</p>
+                <p> We'll skew it on the bar-b, we ain't tryin to lose</p>
+                <p> Say, "I'll be goddamned if they done changed the rules"</p>
+                <p> Old school players to new school fools</p>
+                <p> 'Kast keep it jumping like kangaroos</p>
+                <p> We'll skew it on the bar-b, we ain't tryin to lose</p>
+                <p> Say, "I'll be goddamned if they done changed the rules"</p>
+            </section>
+            <section id="two">
+                   <h2>[Verse 1: André 3000]</h2>
+                    <p>The common denominator, the n*gga numerator</p>
+                    <p> Never know who the hater, n*ggas cater to your ego</p>
+                    <p>  I'm sorry like Atari, who's the cousin to Coleco</p>
+                    <p>  Vision, caught a RICO, back on the street like Chico</p>
+                    <p>  DeBarge, he large and got a 'Lac in the garage</p>
+                    <p>  Few parts here and there, I declare hard</p>
+                    <p>  My Lord, one at Clark, one at Spelman</p>
+                    <p>  Both know each other and it's cool, you can tell when</p>
+                    <p>  He step off in the party, women jump for joy</p>
+                    <p>  But all the wild n*ggas scheming, they gon' jump the boy</p>
+                    <p>  For spittin' all that bourgeoi', "My watch, my car"</p>
+                    <p> I'm a star, I'd rather be a comet by far (Rrah, rrah)</p>
+            </section>
+            <section id="three">
+                <img src="img/skewitonthebarb/skewitonthebar-b1.gif">
+            </section>
+            <section id="four">
+                <h2>[Chorus]</h2>
+                <h2>[Verse 2: Raekwon]</h2>
+                <p>Deliver this through your audio, ghetto mafioso</p>
+                <p>  Grow hydro, then bag it up slow</p>
+                <p> Price that, longevity suggest make moves slow</p>
+                <p> Take time, grow eight, react nine, blow</p>
+                <p> Hydro slide raw like f*ck Ronaldo</p>
+                <p> Fly ride, though, sh*t lookin' wild dope</p>
+                <p> Then glide, yo, flippin' the page, I go</p>
+                <p>  Watch five-o, jump on my meat, ride slow</p>
+                <p>  Watch those undercovers, cop those, rock those</p>
+                <p>  Glock blows, leave 'em baggy and collect, spot closed</p>
+                <p>  Keep a watch froze, lean on the yacht, wash clothes</p>
+                <p>  Let the chop blow, bag a half a block, plot grows, what?</p>
+            </section>
+            <section id="five">
+                <img src="img/skewitonthebarb/skewitonthebar-b3.gif">
+            </section>
+            <section id="six">
+                <img src="img/skewitonthebarb/skewitonthebar-b2.gif">
+                <h2>[Chorus]</h2>
+                <h2>[Verse 3: Big Boi & André 3000]</h2>
+                <p>Boy, I bust raps like D-boys bust gats, sh*t</p>
+                <p> We the type of people that don't bury the axe</p>
+                <p> Or the hatchet, every time we see your link, we snatch it</p>
+                <p> Ridin' 'round our hood talkin' that dumb sh*t, your cabbage</p>
+                <p> Is cracked like plumber's ass and summer's grass</p>
+                <p> I been in the game for a minute, seen some suckas like y'all passin'</p>
+                <p> Thinkin' you're light skinned, aight then, lil' boy why you frightened?</p>
+                <p> The Dungeon Family gon' be here, n*gga, so keep writing</p>
+            </section>
+            <section id="seven">
+                <p>I gotta hit The Source, I need my other half a mic</p>
+                <p> Because that Southernplayalisticadillacmuzik was a classic, right</p>
+                <p>  College Park, East Point and Decatur they got my back, so</p>
+                <p>  We gon' keep on jammin' and stabbin' off in the track, I</p>
+                <p>  Think it's time to bungee, but buddy we will be back</p>
+                <p>  And I'm fin' to put some D's on the 'Lac, know dat (Rrah)</p>
+                <h2>[Chorus]</h2>
+                <div class="next-button">
+                    <a href="aquemini.html">AQUEMINI <i class="bi bi-skip-forward-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

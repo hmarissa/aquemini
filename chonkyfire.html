@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image:url();
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:cover; 
+                z-index: -1; 
+            }
+            h1{
+                color:#6e710c;
+                position: relative;
+                left:10vw;
+            }
+           section img{
+            height: 70vh;
+           }
+           .lyrics section{
+                position: relative;
+                left:10vw;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><i class="bi bi-house-door-fill"></i>&emsp;&emsp;Hold On, Be Strong</a>
+            <a href="returnoftheg.html">2&emsp;&emsp;Return of the G</a>
+            <a href="rosaparks.html">3&emsp;&emsp;Rosa Parks</a>
+            <a href="skewitonthebar-b.html">4&emsp;&emsp;Skew it on the Bar-B</a>
+            <a href="aquemini.html">5&emsp;&emsp;Aquemini</a>
+            <a href="synthesizer.html">6&emsp;&emsp;Synthesizer</a>
+            <a href="slump.html">7&emsp;&emsp;Slump</a>
+            <a href="westsavannah.html">8&emsp;&emsp;West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html">9&emsp;&emsp;Da Art of Storytellin' (PT 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10&emsp;&emsp;Da Art of Storytellin' (Pt 2)</a>
+            <a href="mamacita.html">11&emsp;&emsp;Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12&emsp;&emsp;SpottieOttieDopaliscious</a>
+            <a href="yallscared.html">13&emsp;&emsp;Y'all Scared</a>
+            <a href="nathaniel.html">14&emsp;&emsp;Nathaniel</a>
+            <a href="liberation.html">15&emsp;&emsp;Liberation</a>
+            <a id="current-page" href="chonkyfire.html">16&emsp;&emsp;Chonkyfire</a>
+          </div>
+          <div id="albumCredits" class="credits">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCredits()">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut facere dolore ducimus repellat fugit? Ullam reprehenderit officia cum animi recusandae quam ducimus nihil enim, neque corrupti doloribus repellat dolor!</p>
+          </div>
+        <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>TRACKLIST</span>
+            <span onclick="openCredits()"><i class="bi bi-disc-fill"></i>ALBUM CREDITS</span>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/Mamacita.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Chonkyfire</h1></div>
+        <div class="lyrics">
+            <section id="one">
+                <img src="img/chonkyfire/chonkyfire.png">
+            </section>
+            <section id="two">
+                <h2>[Intro: André 3000]</h2>
+                <p>Woo, woo</p>
+                <p>  Yosky-wosky, peesky-weesky</p>
+                <p>   What'cha wanna do-ski?</p>
+                <p>   Nathaniel</p>
+                <p>  Niggas get jacked like Daniel</p>
+                <p>  Something I can't handle</p>
+                <p>  Yo, unkay</p>
+                <h2>[Verse 1: André 3000]</h2>
+                <p>Yo, this is my story, this is my song</p>
+                <p>  And to them rudypoots don't attempt to try this at home</p>
+                <p>  It's just a poem until y'all learn right from wrong</p>
+                <p>  Know when to bless a situation, when to grab the chrome</p>
+                <p>  But it's back on, another stormy night in Atlanta, Georgia</p>
+                <p>  Overcast, but on behalf of OutKast, I cordially</p>
+                <p>  Invite you to an emotion-filled theater</p>
+                <p>  Bring your umbrellas, 'cause young fella it gets no weirder</p>
+            </section>
+            <section id="three">
+                <h2>[Hook: André 3000]</h2>
+                <p>We reign, reign, supreme, 'preme</p>
+                <p>   Dungeon, dungeon kings</p>
+                <p>   Do you know what brings rats, mice, snakes up out of they hole?</p>
+                <p>   Chonkyfire, spliced with rock n'roll indubitably, piper pied</p>
+                <p>   Now hold on, my brother, no, no, no, no, can't stop the stride</p>
+                <p>  Do you know what brings rats, mice, snakes up out of they hole?</p>
+                <p>  Chonkyfire, spliced with rock n'roll indubitably, piper pied</p>
+                <p>   Now, now just hold on, my brother, no, no, no, no, can't stop the stride</p>
+                <h3>You are now entering the fifth dimension of ascension
+                    Our only intention is to take you high
+                    High, uh, yeah, yeah, my Lord</h3>
+            </section>
+            <section id="four">
+                <img src="img/chonkyfire/chonkyfire2.gif">
+            </section>
+            <section id="five">
+                <h2>[Verse 2: Big Boi]</h2>
+                <p>To make one bob they head would be the track job</p>
+                <p>   Your job's to spit that fire</p>
+                <p>   Some of y'all MC's take this rhymin' for granted, I won't comply</p>
+                <p>   With that slackin', poppin' and crackin' fourth ward say we snappin'</p>
+                <p>   They want that hardness that oddness that gets a nigga to start this</p>
+                <p>   What's happenin', see if I do what you won't do today boy</p>
+                <p>   Will I live tomorrow like you can't even live 'cause you strayed</p>
+                <p>   Motivational skills lackin', when I see you nigga you packin'</p>
+                <p>   Understand that though, you behind a $75,000 car doe</p>
+                <p>   But still stay with mom though, playing the King like Don doe</p>
+                <p>   You choked up, you was the nigga that supposed to be so locced up</p>
+                <p>   Makin' them think Hip Hop is dead, exhume the body if you ain't scared</p>
+                <p>   And if I see you in the streets I'd dap you down like you was Greg, yeah</p>
+                <h2> [Hook]</h2>
+                <div class="next-button">
+                    <a href="liberation.html">LIBERATION  <i class="bi bi-skip-forward-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

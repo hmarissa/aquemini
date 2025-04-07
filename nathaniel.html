@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AQUEMINI</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/adh5nlr.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .scrolling-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250vw; 
+                height: 100vh;
+                background-image:url(img/westsavannah/westsavannahbg.jpg) ;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size:cover; 
+                z-index: -1; 
+            }
+            h1{
+                color:#6e710c;
+                position: relative;
+                left:55vw;
+                top:14vh;
+            }
+            #five img{
+                height: 80vh;
+            }
+            #one img{
+                height: 100vh;
+            }
+            .lyrics section{
+                position: relative;
+            }
+            #two,#three, #four, #five, #six{
+                left:50vw;
+                top:10vh;
+            }
+            #two{
+                top:35vh;
+            }
+            #six{
+                left:70vw;
+                padding-right: 3vw;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" ><i class="bi bi-house-fill"></i>  Hold On, Be Strong</a>
+            <a href="returnoftheg.html">2    Return of the G</a>
+            <a href="rosaparks.html">3    Rosa Parks</a>
+            <a href="skewitonthebar-b.html">4    Skew it on the Bar-B</a>
+            <a href="aquemini.html"  >5    Aquemini</a>
+            <a href="synthesizer.html">6    Synthesizer</a>
+            <a  href="slump.html">7    Slump</a>
+            <a href="westsavannah.html">8    West Savannah</a>
+            <a href="DaArtofStorytellinpt1.html" >9    Da Art of Storytellin' (Part 1)</a>
+            <a href="DaArtofStorytellingpt2.html">10    Da Art of Storytellin' (Part 2)</a>
+            <a href="mamacita.html">11    Mamacita</a>
+            <a href="SpottieOttieDopaliscious.html">12    SpottieOttieDopaliscious</a>
+            <a href="yallscared.html">13    Y'all Scared</a>
+            <a id="current-page" href="nathaniel.html">14    Nathaniel</a>
+            <a href="liberation.html">15    Liberation</a>
+            <a href="chonkyfire.html">16    Chonkyfire</a>
+          </div>
+          <div id="albumCredits" class="credits">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCredits()">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut facere dolore ducimus repellat fugit? Ullam reprehenderit officia cum animi recusandae quam ducimus nihil enim, neque corrupti doloribus repellat dolor!</p>
+          </div>
+        <div class="topnav">
+            <span onclick="openNav()"><i class="bi bi-music-note-beamed"></i>TRACKLIST</span>
+            <span onclick="openCredits()"><i class="bi bi-disc-fill"></i>ALBUM CREDITS</span>
+        </div>
+        <li>
+            <div class="audio-player">
+                <div id="seekObjContainer">
+                    <div id="timeline1">
+                        <div class="progress-fill"></div> <!-- This is the dynamic fill -->
+                        <div class="play-pause"><img id="playPauseImg" src="img/play.svg"> </div>
+                        <div id="seekObj1" class="playhead" style="margin-left: 0px;"><img src="img/star.svg"> </div>
+                    </div>
+
+                </div>
+                <div class="player-controls scrubber">
+                </div>
+                <div class="audio-wrapper">
+                    <audio id="player2" preload="auto">
+                          <source src="audio/Mamacita.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </li>
+        <div class="scrolling-bg"><h1>Nathaniel</h1></div>
+        <div class="lyrics">
+            <section id="one">
+                <h2>[Intro: Nathaniel]</h2>
+                <p>Sh*t man</p>
+                <p>  N*gga gotta go on and god damn</p>
+                <p>  Get the sh*t straight when I god damn get out</p>
+                <p>  Well sh*t</p>
+                <p>  This what really goin down</p>
+            </section>
+            <section id="two">
+                <img src="img/nathaniel/nathaniel.gif">
+            </section>
+            <section id="three">
+                <h2>[Verse: Nathaniel]</h2>
+                <p>Whassup my n*gga another day the same sh*t</p>
+                <p>   Punk-ass C.O.'s on a n*gga dick</p>
+                <p>   Got me up at three o'clock cookin eggs n' grits</p>
+                <p>   I'm a G from C.P. I can't take the sh*t</p>
+                <p>   Tryin to hold a n*gga down in this country ass town</p>
+                <p>   I'm used to smokin chronic movin pounds</p>
+                <p>   They got a n*gga on some "Sir, yessir, left right left"</p>
+                <p>   Throw me in the hole if my ass outta step</p>
+                <p>   They treat you like a motherf*ckin slave</p>
+                <p>   Dopefiends find Jesus, swear they saved</p>
+                <p>   N*ggas better get they game tight</p>
+                <p>   Cause these crackers tryin to take a n*gga life and they rights</p>
+                <p>   I'm surrounded by fake-ass crooks</p>
+                <p>   They swear they kingpins but don't have money on they books</p>
+                <p>   I hear so many lies it make me sick</p>
+                <p>    These n*ggas called ballers sellin dimes and nicks</p>
+                <p>   I can't wait til the day they let me go</p>
+                <p>  So I can eat some steak and shrimp</p>
+                <p>   Grab a mic, and bust a flow</p>
+                <p>   I'm Audi 5 n*gga lights out</p>
+                <p>   Hold it down on the streets until the day that I get out</p>
+                <p>   I'm out man</p>
+                <div class="next-button">
+                    <a href="liberation.html">LIBERATION  <i class="bi bi-skip-forward-fill"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

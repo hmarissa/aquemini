@@ -73,8 +73,9 @@ p{
     z-index: 99; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #4b5f6e; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: #628098; /* Black*/
+    overflow-x: hidden; 
+    overflow-y: auto;
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
@@ -85,7 +86,7 @@ p{
     z-index: 99; 
     top: 0; 
    right: 0;
-    background-color: #4b5f6e; 
+    background-color: #628098; 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s;
@@ -101,7 +102,7 @@ p{
     padding: 8px 8px 8px 32px;
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 1.5;
     color: #f1f1f1;
     display: block;
@@ -120,10 +121,11 @@ p{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-family: "space-grotesk-variable", sans-serif;
-    font-variation-settings: "wght" 300;
-    font-size: 25px;
+    font-variation-settings: "wght" 400;
+    text-transform:uppercase;
+    font-size: 23px;
     line-height: 1.5;
-    color: #718fa6;
+    color: #93afc4;
     display: block;
     transition: 0.15s;
   }
@@ -164,6 +166,7 @@ p{
     display: flex;
     justify-content: space-between;
    padding: 8px;
+   background-color: #718fa63c;;
 }
   
 li{

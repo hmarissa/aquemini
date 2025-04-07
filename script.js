@@ -18,6 +18,26 @@ function closeCredits() {
     document.getElementById("albumCredits").style.width = "0";
 }
 
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('mySidenav');
+    const credits = document.getElementById('albumCredits');
+    const tracklistTrigger = document.querySelector('.topnav span:nth-child(1)');
+    const creditsTrigger = document.querySelector('.topnav span:nth-child(2)');
+
+    if (sidebar.style.width !== '0px' &&
+        !sidebar.contains(event.target) &&
+        !tracklistTrigger.contains(event.target)) {
+        closeNav();
+    }
+
+    if (credits.style.width !== '0px' &&
+        !credits.contains(event.target) &&
+        !creditsTrigger.contains(event.target)) {
+        closeCredits();
+    }
+});
+
+
 var player1, onplayhead, playerId, timeline, playhead, timelineWidth;
 
 jQuery(window).on("load", function () {

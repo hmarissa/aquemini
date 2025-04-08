@@ -21,7 +21,7 @@ h2{
     font-size:clamp(1rem,1vw, 1.5rem);
 }
 .title{
-    width: 20vw;
+    width: 30vw;
 }
 h3{
     font-family: "gil-modern", sans-serif;
@@ -169,7 +169,7 @@ p{
     display: flex;
     justify-content: space-between;
    padding: 8px;
-   background-color: #718fa63c;;
+   background-color: #718fa683;;
 }
   
 li{

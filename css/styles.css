@@ -18,10 +18,11 @@ h2{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 500;
     text-transform:uppercase;
+    line-height: 2.5;
     font-size:clamp(1rem,1vw, 1.5rem);
 }
 .title{
-    width: 30vw;
+    height: 10vh;
 }
 h3{
     font-family: "gil-modern", sans-serif;

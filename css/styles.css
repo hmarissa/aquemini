@@ -229,7 +229,7 @@ div#seekObj1 img {
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 500;
     font-size: 20px;
-    bottom: 15vh;
+    margin-top: 8vh;
 }
 .next-button:hover{
    background-color: #D7db3f;

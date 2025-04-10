@@ -94,7 +94,7 @@ p{
    right: 0;
     background-color: #628098; 
     overflow-x: hidden; 
-    padding-top: 60px; 
+    padding-top: 30px; 
     transition: 0.5s;
   }
  .credits .closebtn {
@@ -108,7 +108,7 @@ p{
     padding: 8px 8px 8px 32px;
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 1.5;
     color: #f1f1f1;
     display: block;

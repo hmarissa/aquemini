@@ -54,9 +54,9 @@ p{
     position: relative;
    
 }
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
     .lyrics {
-     gap:8vw;
+     gap:10vw;
     }
   }
 .lyrics section {

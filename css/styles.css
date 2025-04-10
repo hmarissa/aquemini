@@ -54,6 +54,11 @@ p{
     position: relative;
    
 }
+@media (min-width: 1800px) {
+    .lyrics {
+     gap:8vw;
+    }
+  }
 .lyrics section {
     min-width: 40ch;
     max-width: 40ch;

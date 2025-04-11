@@ -247,7 +247,7 @@ div#seekObj1 img {
 
 .next-button{
     display: inline-flex;
-    padding: 12px 17px 12px 17px;
+    /* padding: 12px 17px 12px 17px; */
     border-radius: 50px;
     background-color: #ffffff;
     font-family: "space-grotesk-variable", sans-serif;
@@ -262,6 +262,8 @@ div#seekObj1 img {
 .next-button a{
     text-decoration: none;
     color: #000000;
+    padding: 12px 17px 12px 17px;
+    display: block;
 }
 
 

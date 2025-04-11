@@ -181,7 +181,7 @@ p{
 .topnav{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 500;
-    font-size: 23px;
+    font-size: 1.3vw;
     color: #ffffff;
     display: flex;
     justify-content: space-between;

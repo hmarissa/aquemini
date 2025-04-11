@@ -119,14 +119,17 @@ p{
     padding: 8px 8px 8px 32px;
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 300;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 1.5;
     color: #f1f1f1;
     display: block;
   }
+  .credits .secondary{
+    color:#93afc4;
+  }
   .credits a{
       text-decoration: none;
-      color: #718fa6;
+      color: #93afc4;
       transition: 0.15s;
   }
   .credits a:hover{
@@ -140,7 +143,7 @@ p{
     font-family: "space-grotesk-variable", sans-serif;
     font-variation-settings: "wght" 400;
     text-transform:uppercase;
-    font-size: 23px;
+    font-size: 1.2vw;
     line-height: 1.5;
     color: #93afc4;
     display: block;

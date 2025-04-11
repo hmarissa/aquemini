@@ -1,6 +1,6 @@
 // Sidebar and Credits Panel
 function openNav() {
-    document.getElementById("mySidenav").style.width = "450px";
+    document.getElementById("mySidenav").style.width = "25vw";
 }
 
 function closeNav() {
@@ -8,7 +8,7 @@ function closeNav() {
 }
 
 function openCredits() {
-    document.getElementById("albumCredits").style.width = "450px";
+    document.getElementById("albumCredits").style.width = "25vw";
 }
 
 function closeCredits() {

@@ -34,11 +34,13 @@ document.addEventListener('click', function(event) {
     }
 });
 
-var player1, onplayhead, playerId, timeline, playhead, timelineWidth;
+let player1, onplayhead, playerId, timeline, playhead, timelineWidth;
+let dragging = false;
 
 jQuery(window).on("load", function () {
     audioPlay();
     ballSeek();
+    updateWhilePlaying();
 });
 
 function audioPlay() {
@@ -98,23 +100,30 @@ function ballSeek() {
     timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
     timeline.addEventListener("click", seek);
-    playhead.addEventListener('mousedown', drag);
-    window.addEventListener('mouseup', mouseUp);
+    playhead.addEventListener("mousedown", drag);
+    window.addEventListener("mouseup", mouseUp);
+    window.addEventListener("mousemove", movePlayhead);
 }
 
 function seek(event) {
     const player = document.getElementById("player2");
     const wasPlaying = !player.paused;
 
-    player.currentTime = player.duration * clickPercent(event, timeline, timelineWidth);
+    const newTime = player.duration * clickPercent(event, timeline, timelineWidth);
+
+    if (Math.abs(newTime - player.currentTime) > 0.01) {
+        player.currentTime = newTime;
+    }
 
     if (wasPlaying && player.readyState >= 2) {
         player.play();
     }
+
+    updatePlayheadPosition(player.currentTime / player.duration);
 }
 
 function clickPercent(event, timeline, timelineWidth) {
-    return (event.clientX - getPosition(timeline)) / timelineWidth;
+    return Math.max(0, Math.min(1, (event.clientX - getPosition(timeline)) / timelineWidth));
 }
 
 function getPosition(el) {
@@ -122,44 +131,45 @@ function getPosition(el) {
 }
 
 function drag(e) {
+    dragging = true;
     player1.removeEventListener("timeupdate", timeCal);
-    onplayhead = jQuery(this).attr("id");
-    playerId = "player2";
-    const player = document.getElementById(playerId);
-    window.addEventListener('mousemove', dragFunc);
 }
 
-function dragFunc(e) {
-    const newMargLeft = e.clientX - getPosition(timeline);
+function movePlayhead(event) {
+    if (!dragging) return;
+    const percent = clickPercent(event, timeline, timelineWidth);
+    updatePlayheadPosition(percent);
+}
 
-    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-        playhead.style.marginLeft = newMargLeft + "px";
-    } else if (newMargLeft < 0) {
-        playhead.style.marginLeft = "0px";
-    } else {
-        playhead.style.marginLeft = timelineWidth + "px";
-    }
+function updatePlayheadPosition(percent) {
+    playhead.style.marginLeft = percent * timelineWidth + "px";
 }
 
 function mouseUp(e) {
-    if (onplayhead != null) {
-        const player = document.getElementById(playerId);
-        window.removeEventListener('mousemove', dragFunc);
-        player.currentTime = player.duration * clickPercent(e, timeline, timelineWidth);
+    if (dragging) {
+        const player = document.getElementById("player2");
+        dragging = false;
+        const newTime = player.duration * clickPercent(e, timeline, timelineWidth);
+        if (Math.abs(newTime - player.currentTime) > 0.01) {
+            player.currentTime = newTime;
+        }
         player1.addEventListener("timeupdate", timeCal);
     }
-    onplayhead = null;
 }
 
-// Removed unnecessary pause logic from timeUpdate
-function timeUpdate() {
-    const playPercent = timelineWidth * (player1.currentTime / player1.duration);
-    playhead.style.marginLeft = playPercent + "px";
+function updateWhilePlaying() {
+    const player = document.getElementById("player2");
+    player.addEventListener("timeupdate", () => {
+        if (!dragging) {
+            const percent = player.currentTime / player.duration;
+            updatePlayheadPosition(percent);
+        }
+    });
 }
 
 document.querySelector(".lyrics").addEventListener("wheel", function(event) {
     event.preventDefault();
-    this.scrollLeft += event.deltaY * 2;
+    this.scrollLeft += event.deltaY + event.deltaX;
 });
 
 const lyricsContainer = document.querySelector(".lyrics");

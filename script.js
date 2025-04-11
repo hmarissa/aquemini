@@ -165,7 +165,7 @@ function timeUpdate() {
 
 document.querySelector(".lyrics").addEventListener("wheel", function(event) {
     event.preventDefault();
-    this.scrollLeft += event.deltaY * 2;
+    this.scrollLeft += event.deltaY + event.deltaX;
 });
 
 const lyricsContainer = document.querySelector(".lyrics");

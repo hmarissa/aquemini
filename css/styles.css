@@ -58,6 +58,9 @@ p{
     .lyrics {
      gap:8vw;
     }
+    .next-button{
+        font-size: 0.7vw;
+    }
   }
 .lyrics section {
     min-width: 40ch;
@@ -69,6 +72,9 @@ p{
         max-width: 35ch;
         min-width: 35ch;
     }
+    .lyrics {
+        gap:2vw;
+       }
 }
 .lyrics div{
     position: absolute;

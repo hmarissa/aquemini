@@ -67,7 +67,7 @@ p{
     max-width: 40ch;
     position: absolute;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .lyrics section{
         max-width: 35ch;
         min-width: 35ch;

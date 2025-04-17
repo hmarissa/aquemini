@@ -58,7 +58,7 @@ p{
     .lyrics {
      gap:8vw;
     }
-    .next-button{
+    .next-button a{
         font-size: 0.7vw;
     }
   }
